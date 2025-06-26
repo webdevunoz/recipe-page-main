@@ -88,6 +88,10 @@ img {
   margin-bottom: var(--spacing-500);
 }
 
+section {
+  margin: var(--spacing-400) 0;
+}
+
 #title-heading {
   margin-bottom: var(--spacing-400);
 }
