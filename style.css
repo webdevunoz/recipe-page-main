@@ -72,7 +72,6 @@
 body {
   background-color: var(--stone-100);
   margin: var(--spacing-1600) var(--spacing-600);
-  overflow: hidden;
 }
 
 #card-wrapper {
@@ -87,4 +86,17 @@ img {
   border-radius: 12px;
   height: 300px;
   margin-bottom: var(--spacing-500);
+}
+
+#title-heading {
+  margin-bottom: var(--spacing-400);
+}
+
+h1 {
+  color: var(--stone-900);
+  margin-bottom: var(--spacing-400);
+}
+
+#title-heading > p {
+  color: var(--stone-600);
 }
