@@ -82,3 +82,9 @@ body {
   background-color: var(--White);
   width: 736px;
 }
+
+img {
+  border-radius: 12px;
+  height: 300px;
+  margin-bottom: var(--spacing-500);
+}
