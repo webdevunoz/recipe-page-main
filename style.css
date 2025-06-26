@@ -104,3 +104,33 @@ h1 {
 #title-heading > p {
   color: var(--stone-600);
 }
+
+#preparation-section {
+  background-color: var(--rose-50);
+  padding: var(--spacing-300);
+}
+
+#preparation-section > h3 {
+  color: var(--rose-800);
+  margin-bottom: var(--spacing-200);
+}
+
+ul {
+  list-style: none;
+  color: var(--stone-600);
+  padding-left: var(--spacing-100);
+}
+
+li {
+  position: relative;
+  margin-bottom: var(--spacing-100);
+  padding-left: var(--spacing-400);
+}
+
+li::before {
+  content: "•";
+  position: absolute;
+  left: -1px;
+  color: var(--rose-800);
+  font-size: 20px;
+}
