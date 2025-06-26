@@ -74,3 +74,11 @@ body {
   margin: var(--spacing-1600) var(--spacing-600);
   overflow: hidden;
 }
+
+#card-wrapper {
+  padding: var(--spacing-500);
+  margin: 0 auto;
+  border-radius: 24px;
+  background-color: var(--White);
+  width: 736px;
+}
