@@ -134,3 +134,8 @@ li::before {
   color: var(--rose-800);
   font-size: 20px;
 }
+
+section > h2 {
+  color: var(--brown-800);
+  margin-bottom: var(--spacing-300);
+}
