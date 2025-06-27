@@ -18,6 +18,7 @@
 
   /* Spacing scale (base unit = 8px) */
   --spacing-1600: 128px;
+  --spacing-950: 76px;
   --spacing-600: 48px;
   --spacing-500: 40px;
   --spacing-400: 32px;
@@ -69,6 +70,8 @@
   letter-spacing: 0;
 }
 
+/*-------------Layout Selectors-------------*/
+
 body {
   background-color: var(--stone-100);
   margin: var(--spacing-1600) var(--spacing-600);
@@ -81,6 +84,8 @@ body {
   background-color: var(--White);
   max-width: 736px;
 }
+
+/*-------------Header Selectors-------------*/
 
 img {
   border-radius: 12px;
@@ -100,6 +105,8 @@ p,
 caption {
   color: var(--stone-600);
 }
+
+/*-------------Preparation Selectors-------------*/
 
 #preparation-section {
   background-color: var(--rose-50);
@@ -143,9 +150,11 @@ h2 {
   box-shadow: 0 0 0 0.6px var(--stone-150);
 }
 
+/*-------------Ingredients Selectors-------------*/
+
 ol {
   color: var(--stone-600);
-  padding-left: 24px;
+  padding-left: var(--spacing-300);
 }
 
 ol li {
@@ -162,6 +171,8 @@ ol li::marker {
   letter-spacing: 0;
 }
 
+/*-------------Nutrition Selectors-------------*/
+
 #nutrition-table {
   width: 100%;
   border-collapse: collapse;
@@ -169,17 +180,18 @@ ol li::marker {
 
 caption {
   text-align: left;
-  margin-bottom: 24px;
+  margin-bottom: var(--spacing-300);
 }
 
 #nutrition-table th {
   color: var(--stone-600);
-  padding: 12px 0 12px 32px;
+  padding: var(--spacing-150) 0 var(--spacing-150) var(--spacing-400);
 }
 
 #nutrition-table td {
   color: var(--brown-800);
-  padding: 12px 32px 12px 8px;
+  padding: var(--spacing-150) var(--spacing-400) var(--spacing-150)
+    var(--spacing-100);
 }
 
 #nutrition-table th,
@@ -193,6 +205,9 @@ caption {
 #nutrition-table tr:last-child td {
   border-bottom: none;
 }
+
+/*-------------Media Queries(Desktop:1440, Tablet:768, Mobile:375)-------------*/
+/*Note: Desktop and Tablet styles are the same, so no @media needed for Desktop */
 
 @media (min-width: 375px) {
   body {
@@ -214,23 +229,24 @@ caption {
   }
 
   h1 {
-    padding: 40px 32px 24px 32px;
+    padding: var(--spacing-500) var(--spacing-400) var(--spacing-300)
+      var(--spacing-400);
   }
 
   p {
-    padding: 0 32px;
+    padding: 0 var(--spacing-400);
   }
 
   main {
-    padding-bottom: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-bottom: var(--spacing-500);
+    padding-left: var(--spacing-400);
+    padding-right: var(--spacing-400);
   }
 }
 
 @media (min-width: 768px) {
   body {
-    margin: 128px 76px;
+    margin: var(--spacing-1600) var(--spacing-950);
     background-color: var(--stone-100);
   }
 
@@ -247,7 +263,7 @@ caption {
   }
 
   h1 {
-    padding: 40px 0 24px 0;
+    padding: var(--spacing-500) 0 var(--spacing-300) 0;
   }
 
   p {
