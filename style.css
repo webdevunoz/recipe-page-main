@@ -85,7 +85,6 @@ body {
 img {
   border-radius: 12px;
   height: 300px;
-  margin-bottom: var(--spacing-500);
   width: 100%;
 }
 
@@ -95,7 +94,6 @@ img {
 
 h1 {
   color: var(--stone-900);
-  margin-bottom: var(--spacing-400);
 }
 
 p,
@@ -209,7 +207,6 @@ caption {
   img {
     height: auto;
     border-radius: 0;
-    margin: 0;
   }
 
   h1.text-preset-1 {
@@ -217,7 +214,6 @@ caption {
   }
 
   h1 {
-    margin: 0;
     padding: 40px 32px 24px 32px;
   }
 
@@ -229,5 +225,36 @@ caption {
     padding-bottom: 40px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 128px 76px;
+    background-color: var(--stone-100);
+  }
+
+  #card-wrapper {
+    display: block;
+  }
+
+  img {
+    border-radius: 12px;
+  }
+
+  h1.text-preset-1 {
+    font-size: 40px;
+  }
+
+  h1 {
+    padding: 40px 0 24px 0;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  main {
+    padding: 0;
   }
 }
