@@ -97,7 +97,8 @@ h1 {
   margin-bottom: var(--spacing-400);
 }
 
-#title-heading > p {
+p,
+caption {
   color: var(--stone-600);
 }
 
@@ -160,4 +161,36 @@ ol li::marker {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0;
+}
+
+#nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+#nutrition-table th {
+  color: var(--stone-600);
+  padding: 12px 0 12px 32px;
+}
+
+#nutrition-table td {
+  color: var(--brown-800);
+  padding: 12px 32px 12px 8px;
+}
+
+#nutrition-table th,
+#nutrition-table td {
+  width: 50%;
+  text-align: left;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+#nutrition-table tr:last-child th,
+#nutrition-table tr:last-child td {
+  border-bottom: none;
 }
