@@ -118,13 +118,13 @@ ul {
   padding-left: var(--spacing-100);
 }
 
-li {
+ul li {
   position: relative;
   margin-bottom: var(--spacing-100);
   padding-left: var(--spacing-400);
 }
 
-li::before {
+ul li::before {
   content: "•";
   position: absolute;
   left: -1px;
@@ -132,7 +132,7 @@ li::before {
   font-size: 20px;
 }
 
-section > h2 {
+h2 {
   color: var(--brown-800);
   margin-bottom: var(--spacing-300);
 }
@@ -141,4 +141,23 @@ section > h2 {
   display: flow-root;
   margin: var(--spacing-400) 0;
   box-shadow: 0 0 0 0.6px var(--stone-150);
+}
+
+ol {
+  color: var(--stone-600);
+  padding-left: 24px;
+}
+
+ol li {
+  margin-bottom: var(--spacing-100);
+  padding-left: var(--spacing-200);
+}
+
+ol li::marker {
+  /*.text-preset-4-bold properties */
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
 }
